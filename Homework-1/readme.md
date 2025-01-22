@@ -6,6 +6,7 @@ Visual Studio Code is used for "local development," according to the Canvas for 
 * Prettier
 * Live Server
 * Auto Rename Tag
+
 The optional Extensions that we will be using in this class are:
 * Code Spell Checker
 * vscode-pets
