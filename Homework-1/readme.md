@@ -2,6 +2,13 @@
 Websites deal with information. Are made to be viewed and browsed. Web apps are more personalized experiences and have a specific goal in mind.
 
 ### VS Code & Extensions
+Visual Studio Code is used for "local development," according to the Canvas for this class. It is a programming code editor. The Extensions that we will be using in this class are:
+* Prettier
+* Live Server
+* Auto Rename Tag
+The optional Extensions that we will be using in this class are:
+* Code Spell Checker
+* vscode-pets
 
 ### Version Control, Git, & GitHub
 Git is version control, tracks changes, good for group work.
