@@ -1,0 +1,24 @@
+nav {
+    background-color: goldenrod;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 20px;
+    /* or just use padding: 4 px 8 px
+    because it will repeat the first number for the third number and
+    the second number for the forth number.
+    Padding works like a clock. 
+    First number = Top
+    Second number = Right
+    Third number = Bottom
+    Forth number = Left */
+    padding: 4px 8px 4px 8px;
+}
