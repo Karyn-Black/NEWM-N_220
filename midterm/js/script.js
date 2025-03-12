@@ -17,7 +17,20 @@ console.table([food]);
 
 cart = [food];
 
+if ((cart = true)) {
+  add.item;
+}
+then((cart = false));
+{
+  ("No items in cart");
+}
+
 for (let i = 0; i < food.length; i++) {
   console.log("For Loop:", food[i]);
   food.innerHTML += "<li>" + food[i] + "</li>";
 }
+
+<tr>
+  <td>Total</td>
+  <td colspan="3">$0.00</td>
+</tr>;
