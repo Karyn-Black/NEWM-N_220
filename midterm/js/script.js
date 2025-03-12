@@ -25,6 +25,11 @@ then((cart = false));
   ("No items in cart");
 }
 
+document.getElementById("myButtonm").addEventListener = ("click", local)();
+{
+  console.log("Button was clicked!");
+}
+
 for (let i = 0; i < food.length; i++) {
   console.log("For Loop:", food[i]);
   food.innerHTML += "<li>" + food[i] + "</li>";
