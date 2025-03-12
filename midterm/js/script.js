@@ -12,3 +12,5 @@ const food = [
   { name: "Fries", price: "$1.99" },
   { name: "Onion Rings", price: "$2.49" },
 ];
+
+console.table[food];
