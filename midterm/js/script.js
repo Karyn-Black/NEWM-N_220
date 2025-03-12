@@ -14,3 +14,8 @@ const food = [
 ];
 
 console.table([food]);
+
+for (let i = 0; i < food.length; i++) {
+  console.log("For Loop:", food[i]);
+  food.innerHTML += "<li>" + food[i] + "</li>";
+}
