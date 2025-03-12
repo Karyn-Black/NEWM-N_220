@@ -1,9 +1,5 @@
-## Midterm
+## Group Events
 
-### Weekly Recap
-
-What'd ya learn?
-
-### Live Links
+### Live Link
 
 [Home Page](https://karyn-black.github.io/NEWM-N_220/midterm)
