@@ -1,6 +1,6 @@
-let = menu;
-let = cart;
-let = no_items;
+let menu = m;
+let cart = c;
+let no_items = ni;
 
 const food = [
   { name: "Hamburger", price: "$2.99" },
