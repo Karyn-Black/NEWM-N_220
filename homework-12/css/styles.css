@@ -1,0 +1,12 @@
+nav {
+  height: 50px;
+  padding: 20px;
+  background-color: honeydew;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav a {
+}
