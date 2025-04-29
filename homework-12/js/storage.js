@@ -65,5 +65,14 @@ function toggleLogin() {
   }
 }
 
+function logoutUser() {
+  localStorage.removeItem("activeUser");
+  activeUser = {};
+
+  toggleLogin();
+}
+
 loginFormRef.onsubmit = loginUser;
+logoutRef.onclick = logoutUser;
+
 toggleLogin();
