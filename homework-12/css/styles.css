@@ -18,6 +18,18 @@ nav a:visited {
   color: darkgreen;
 }
 
+button {
+  padding: 8px;
+  background-color: brown;
+  color: white;
+  border-radius: 40px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
 .digimon-card {
   height: 200px;
   width: 200px;
