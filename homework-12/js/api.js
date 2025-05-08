@@ -17,6 +17,9 @@ async function getDigimon() {
   //     // Code to cleanup => do it here
   //   });
 
+  newCard.dataset.name = currentDigimon.name;
+  newCard.onclick = likeDigimon;
+
   try {
     const digiResp = await fetch("https://digimon-api.vercel.app/api/digimons");
 
@@ -28,6 +31,12 @@ async function getDigimon() {
   } catch (err) {
     console.warn(err);
   }
+}
+
+function likeDigimon() {
+  const digimonName = e.currentTarget.dataset.name;
+  console.log(digimonName);
+  localStorage.setItem(digimonName.JSON.stringify(true));
 }
 
 getDigimon();
