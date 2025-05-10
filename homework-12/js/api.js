@@ -19,8 +19,7 @@ async function getDigimon() {
   //     // Code to cleanup => do it here
   //   });
 
-  // newCard.dataset.name = currentDigimon.name;
-  // newCard.onclick = likeDigimon;
+  // img.onclick = likePlanet;
 
   try {
     const digiResp = await fetch("https://digimon-api.vercel.app/api/digimon");
@@ -40,7 +39,8 @@ async function getDigimon() {
         <button class="">&hearts;</button>
       `;
 
-      newCard.onclick = likeDigimon();
+      newCard.dataset.name = currentDigimon.name;
+      newCard.onclick = likeDigimon;
 
       digimonListRef.appendChild(newCard);
 
@@ -54,10 +54,24 @@ async function getDigimon() {
   console.log("End of function");
 }
 
-function likeDigimon() {
-  //   const digimonName = e.currentTarget.dataset.name;
-  console.log("It works");
+function likeDigimon(e) {
+  const digimonName = e.currentTarget.dataset.name;
+
+  console.log(digimonName);
+
   //   localStorage.setItem(digimonName.JSON.stringify(true));
+
+  // Local Storage stores our data as a key value pair
+  // localStorage.setItem("key", value);
+
+  // 1. Store all liked digimon as an array
+  // likedDigimon = ["Koromon", "Tsunomon"]
+
+  // 2. Each digimon is a key
+  // localStorage.getItem("Koromon"); // OUTPUT: "true"
+  // localStorage.setItem("Koromon", JSON.stringify(true)) // OUTPUT: "true"
+
+  localStorage.setItem(digimonName, JSON.stringify(true));
 }
 
 getDigimon();
