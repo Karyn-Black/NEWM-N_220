@@ -40,6 +40,8 @@ async function getDigimon() {
         <button class="">&hearts;</button>
       `;
 
+      newCard.onclick = likeDigimon();
+
       digimonListRef.appendChild(newCard);
 
       // <div class="digimon-card">
@@ -52,10 +54,10 @@ async function getDigimon() {
   console.log("End of function");
 }
 
-// function likeDigimon() {
-//   const digimonName = e.currentTarget.dataset.name;
-//   console.log(digimonName);
-//   localStorage.setItem(digimonName.JSON.stringify(true));
-// }
+function likeDigimon() {
+  //   const digimonName = e.currentTarget.dataset.name;
+  console.log("It works");
+  //   localStorage.setItem(digimonName.JSON.stringify(true));
+}
 
 getDigimon();
