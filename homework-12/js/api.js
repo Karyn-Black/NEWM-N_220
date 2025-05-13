@@ -33,16 +33,22 @@ async function getDigimon() {
     for (let i = 0; i < digiData.length; i++) {
       const currentDigimon = digiData[i];
       const digimonIsLiked = JSON.parse(
-        localStorage.getItem(currentDigimon.name));
+        localStorage.getItem(currentDigimon.name)) || false;
 
-        console.log("Yes, this Digion is Liked", digimonIsLiked) || false;
+        console.log("Yes, this Digimon is Liked", digimonIsLiked);
 
-      const newCard = document.createElement("div");
+      let likeClass = "";  
+
+      if(digimonIsLiked) {
+        likeClass = "like";
+      }
+      
+        const newCard = document.createElement("div");
       newCard.classList.add("digimon-card");
       newCard.innerHTML += `
         <img src="${currentDigimon.img}" alt="${currentDigimon.name}"/>
         <h4>${currentDigimon.name}</h4>
-        <button class="">&hearts;</button>
+        <button class="${likeClass}">&hearts;</button>
       `;
 
       newCard.dataset.name = currentDigimon.name;
