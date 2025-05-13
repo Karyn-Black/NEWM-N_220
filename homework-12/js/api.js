@@ -83,7 +83,15 @@ function likeDigimon(e) {
   // localStorage.getItem("Koromon"); // OUTPUT: "true"
   // localStorage.setItem("Koromon", JSON.stringify(true)) // OUTPUT: "true"
 
-  localStorage.setItem(digimonName, JSON.stringify(true));
+  const isDigimonLiked = JSON.parse(localStorage.getItem(digimonName));
+
+  if(isDigimonLiked) {
+    localStorage.removeItem(digimonName);
+  } else {
+    localStorage.setItem(digimonName, JSON.stringify(true));
+  }
+
+  getDigimon();
 }
 
 getDigimon();
