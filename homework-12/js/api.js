@@ -20,6 +20,8 @@ async function getDigimon() {
   //   });
 
   // img.onclick = likePlanet;
+  // const planetIsLiked = JSON.parse(
+  //   localStorage.getItem(currentPlanet.name));
 
   try {
     const digiResp = await fetch("https://digimon-api.vercel.app/api/digimon");
@@ -30,6 +32,10 @@ async function getDigimon() {
 
     for (let i = 0; i < digiData.length; i++) {
       const currentDigimon = digiData[i];
+      const digimonIsLiked = JSON.parse(
+        localStorage.getItem(currentDigimon.name));
+
+        console.log("Yes, we like", digimonIsLiked);
 
       const newCard = document.createElement("div");
       newCard.classList.add("digimon-card");
