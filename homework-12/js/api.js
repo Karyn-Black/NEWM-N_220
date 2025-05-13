@@ -35,7 +35,7 @@ async function getDigimon() {
       const digimonIsLiked = JSON.parse(
         localStorage.getItem(currentDigimon.name));
 
-        console.log("Yes, we like", digimonIsLiked);
+        console.log("Yes, this Digion is Liked", digimonIsLiked) || false;
 
       const newCard = document.createElement("div");
       newCard.classList.add("digimon-card");
