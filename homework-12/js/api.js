@@ -22,6 +22,7 @@ async function getDigimon() {
   // img.onclick = likePlanet;
   // const planetIsLiked = JSON.parse(
   //   localStorage.getItem(currentPlanet.name));
+  // if(planetIsLiked) {likeClass = "like";}
 
   try {
     const digiResp = await fetch("https://digimon-api.vercel.app/api/digimon");
